@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# 
+# the sample graph is found in the repo (graphorder.png)
 
 # In[17]:
 
