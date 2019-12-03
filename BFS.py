@@ -6,7 +6,7 @@
 # In[17]:
 
 
-#neigbours
+#neigbours of each node
 graph    = { 'A':['B','E','C'], 
             'B':['A','D','E'], 
             'C':['A','F','G'],
@@ -15,6 +15,7 @@ graph    = { 'A':['B','E','C'],
             'F':['C'],
             'G':['C'] }
 
+# start is origin node
 def search(graph, start):
     visited = []
     queue = [start]
@@ -29,6 +30,7 @@ def search(graph, start):
                 queue.append(x)
     return visited
 
+#input the node you want to start from
 search(graph, 'A')
 
 
@@ -40,7 +42,7 @@ search(graph,'A')
 
 # In[19]:
 
-
+#input the node you want to start from and the node you are going to 
 def bfs_shortest_path(graph, start, end):
     visited=[]
     queue = [[start]]
